@@ -61,7 +61,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Title and description
-st.title("Comparative Country Dashboardd")
+st.title("Comparative Country Dashboard")
 st.write('''
             Source Data: [World Bank Group](https://www.worldbank.org/ext/en/home)
             ''')
