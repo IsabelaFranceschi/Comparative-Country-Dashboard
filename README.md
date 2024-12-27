@@ -17,8 +17,7 @@ To run this app locally, you'll need to have Python and Streamlit installed. Fol
 
 ```bash
 # Clone this repository
-git clone https://github.com/yourusername/cost-of-living-dashboard.git
-cd cost-of-living-dashboard
+git clone https://github.com/yourusername/Comparative-Country-Dashboard.git
 
 # Install required Python packages
 pip install -r requirements.txt
