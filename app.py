@@ -284,9 +284,9 @@ with tab3:
         st.markdown("...")
 
 # Education Indicators
-#with tab4:
-    #st.subheader("Education Indicators")
-    #col1, col2 = st.columns(2)
+with tab4:
+    st.subheader("Education Indicators")
+    col1, col2 = st.columns(2)
     #with col1:
         #fig = px.line(
             #filtered_data,
@@ -312,7 +312,7 @@ with tab3:
             #title="Literacy Rate Over Time"
         #)
         #st.plotly_chart(fig)
-    with col2:
+    with col1:
         fig = px.line(
             filtered_data,
             x='Year', y='Expenditure on education', color='Country',
