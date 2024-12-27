@@ -1,15 +1,14 @@
 # Comparative Country Dashboard
 
 ## App link
-https://worldapp.streamlit.app/
+https://comparative-country-dashboard.streamlit.app/
 
 ## Overview
-The Comparative Country Dashboard is a dynamic visualization tool designed to provide an in-depth overview of selected countries along with historical analysis across economic and social indicators, helping users understand trends, patterns, and differences in key metrics such as GDP, PPP, inflation rates, and more.
+The Comparative Country Dashboard provides an overview of selected countries along with historical analysis across economic and social indicators, helping users understand trends, patterns, and differences in key metrics such as GDP, PPP, inflation rates, and more.
 
 ## How to Use
-1. **Select a Country**: Begin by choosing a single or multiple countries from the dropdown menu to view data.
-2. **Choose Indicators**: Select one or more indicators to visualize. The dashboard will update automatically to reflect the chosen metrics.
-3. **Analyze Trends**: Observe the trends over selected years to gain insights into how each country has evolved in terms of economic health and social metrics.
+1. **Select a Country**: Begin by choosing a single country from the dropdown menu.
+2. **Choose other countries and years**: Select other countries and years to compare indicators over time.
 
 ## Run the app
 
