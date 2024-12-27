@@ -6,7 +6,7 @@ import altair as alt
 
 # Page configuration
 st.set_page_config(
-    page_title="World Dashboard",
+    page_title="Comparative Country Dashboard",
     page_icon="🌐",
     layout="wide",
     initial_sidebar_state="expanded"
@@ -61,7 +61,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # Title and description
-st.title("Countries Comparison Dashboard")
+st.title("Comparative Country Dashboardd")
 
 # Load data
 df_combined = pd.read_csv('df_combined.csv')
@@ -157,7 +157,7 @@ filtered_data = df_combined[
 ]
 
 # Create tabs for Economic and Social Indicators
-tab1, tab2, tab3, tab4 = st.tabs(["Economic Indicators", "Infra Indicators", "Social Indicators", "Education Indicators"])
+tab1, tab2, tab3, tab4 = st.tabs(["Economic Indicators", "Infrastructure Indicators", "Social Indicators", "Education Indicators"])
 
 # Economic Indicators
 with tab1:
@@ -284,17 +284,17 @@ with tab3:
         st.markdown("...")
 
 # Education Indicators
-with tab4:
-    st.subheader("Education Indicators")
-    col1, col2 = st.columns(2)
-    with col1:
-        fig = px.line(
-            filtered_data,
-            x='Year', y='School Enrollment', color='Country',
-            title="School Enrollment Over Time"
-        )
-        st.plotly_chart(fig)
-        st.markdown("School Enrollment is the percentage of the eligible population enrolled in primary, secondary, or tertiary education.")
+#with tab4:
+    #st.subheader("Education Indicators")
+    #col1, col2 = st.columns(2)
+    #with col1:
+        #fig = px.line(
+            #filtered_data,
+            #x='Year', y='School Enrollment', color='Country',
+            #title="School Enrollment Over Time"
+        #)
+        #st.plotly_chart(fig)
+        #st.markdown("School Enrollment is the percentage of the eligible population enrolled in primary, secondary, or tertiary education.")
     #with col2:
         #st.markdown("**Expected Years of Schooling:** The total number of years of schooling a child of school-entering age can expect to receive.")
         #fig = px.line(
