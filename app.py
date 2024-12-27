@@ -320,3 +320,7 @@ with tab4:
         )
         st.plotly_chart(fig)
         st.markdown("Expenditure on Education is the percentage of GDP spent on education.")
+
+with st.expander('About', expanded=True):
+        st.write('''
+            - Data: [World Bank Group](https://www.worldbank.org/ext/en/home).
