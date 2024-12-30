@@ -1,6 +1,6 @@
 # Comparative Country Dashboard
 
-[Access to the app](https://comparative-country-dashboard.streamlit.app/)
+[Access to the app](https://comparativecountrydashboard.streamlit.app)
 
 ## Overview
 The Comparative Country Dashboard provides an overview of selected countries along with historical analysis across economic and social indicators, helping users understand trends, patterns, and differences in key metrics such as GDP, PPP, inflation rates, and more.
