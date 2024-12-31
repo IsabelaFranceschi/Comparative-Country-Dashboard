@@ -67,14 +67,14 @@ st.write('''
             ''')
 
 # Load data
-df_combined = pd.read_csv('df_combined.csv')
-df_combined['Year'] = df_combined['Year'].astype(str)
+df_annualIndicators = pd.read_csv('df_annualIndicators.csv')
+df_annualIndicators['Year'] = df_annualIndicators['Year'].astype(str)
 
 # Select one country for detailed analysis
 selected_country = st.selectbox(
     "Select a Country", 
-    options=df_combined['Country'].unique(), 
-    index=list(df_combined['Country'].unique()).index("Brazil") if "Brazil" in df_combined['Country'].unique() else 0
+    options = df_annualIndicators['Country'].unique(), 
+    index = list(df_annualIndicators['Country'].unique()).index("Brazil") if "Brazil" in df_annualIndicators['Country'].unique() else 0
 )
 
 # Center the country name in bold black text with a white background
@@ -88,7 +88,7 @@ st.markdown(
 )
 
 # Filter data for the selected country
-country_data = df_combined[df_combined['Country'] == selected_country]
+country_data = df_annualIndicators[df_annualIndicators['Country'] == selected_country]
 
 # Get the latest available data for the selected country
 latest_data = country_data.sort_values(by='Year', ascending=False).iloc[0]
@@ -144,19 +144,19 @@ st.header("Historical and Comparative Analysis")
 # Select additional countries and years for comparison
 selected_countries = st.multiselect(
     "Select Countries to Compare",
-    options=df_combined['Country'].unique(),
-    default=[selected_country, "United States"]
+    options = df_annualIndicators['Country'].unique(),
+    default = [selected_country, "United States"]
 )
 selected_years = st.multiselect(
     "Select Years to Compare",
-    options=df_combined['Year'].unique(),
+    options = df_annualIndicators['Year'].unique(),
     default=["2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023"]
 )
 
 # Filter data based on selections
-filtered_data = df_combined[
-    (df_combined['Country'].isin(selected_countries)) & 
-    (df_combined['Year'].isin(selected_years))
+filtered_data = df_annualIndicators[
+    (df_annualIndicators['Country'].isin(selected_countries)) & 
+    (df_annualIndicators['Year'].isin(selected_years))
 ]
 
 # Create tabs for Economic and Social Indicators
